@@ -1,0 +1,57 @@
+<html>
+   <head>
+          <link rel="stylesheet" href='/static/main.css' />
+          <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+   </head>
+   <body>
+      <div class="input-box">
+         <h2>Input for the predictions</h2>
+         <form action = "{{ url_for('predict_weight') }}" method = "POST">
+          <div class="user-box">
+            <input type="text" list="mylist" required="" name="species">
+            <label>Species</label>
+              <datalist id="mylist">
+                <option value="Bream">Bream </option>
+                <option value="Parkki">Parkki</option>
+                <option value="Perch">Perch</option>
+                <option value="Pike">Pike</option>
+                <option value="Roach">Roach</option>
+                <option value="Smelt">Smelt</option>
+                <option value="Whitefish">Whitefish</option>
+              </datalist>
+          </div>
+           <div class="user-box">
+             <input type="text" name="Length1" required="">
+             <label>Length1</label>
+           </div>
+           <div class="user-box">
+            <input type="text" name="Length2" required="">
+            <label>Length2</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Length3" required="">
+            <label>Length3</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Height" required="">
+            <label>Height</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Width" required="">
+            <label>Width</label>
+          </div>
+          <div class="button-box"></div>
+           <button type="submit" name="" value="" class="btn-link">Predict</button>
+        </div>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+         </form>
+       </div>
+       <br>
+       <br>
+   </body>
+</html>
+
